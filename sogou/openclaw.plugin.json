@@ -1,0 +1,12 @@
+{
+  "id": "sogou",
+  "uiHints": {},
+  "contracts": {
+    "webSearchProviders": ["sogou"]
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}

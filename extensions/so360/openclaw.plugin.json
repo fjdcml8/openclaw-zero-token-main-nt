@@ -1,0 +1,12 @@
+{
+  "id": "so360",
+  "uiHints": {},
+  "contracts": {
+    "webSearchProviders": ["so360"]
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}

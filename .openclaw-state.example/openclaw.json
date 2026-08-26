@@ -1,0 +1,59 @@
+{
+  "browser": {
+    "attachOnly": true,
+    "defaultProfile": "openclaw",
+    "profiles": {
+      "openclaw": {
+        "cdpUrl": "http://127.0.0.1:9222",
+        "color": "#4285F4"
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {}
+  },
+  "agents": {
+    "defaults": {
+      "models": {},
+      "workspace": "~/.openclaw-zero/workspace"
+    }
+  },
+  "ui": {
+    "assistant": {
+      "name": "OpenClaw",
+      "avatar": "🦞"
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true
+  },
+  "gateway": {
+    "port": 3001,
+    "mode": "local",
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "62b791625fa441be036acd3c206b7e14e2bb13c803355823"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    },
+    "http": {
+      "endpoints": {
+        "chatCompletions": {
+          "enabled": true
+        }
+      }
+    }
+  },
+  "tools": {
+    "profile": "full",
+    "sessions": {
+      "visibility": "all"
+    }
+  }
+}

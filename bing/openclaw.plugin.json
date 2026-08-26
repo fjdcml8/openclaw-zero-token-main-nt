@@ -1,0 +1,35 @@
+{
+  "id": "bing",
+  "uiHints": {
+    "webSearch.region": {
+      "label": "Bing Market (mkt)",
+      "help": "Optional Bing market/locale code such as zh-CN, en-US, or ja-JP."
+    },
+    "webSearch.safeSearch": {
+      "label": "Bing SafeSearch",
+      "help": "SafeSearch level for Bing results."
+    }
+  },
+  "contracts": {
+    "webSearchProviders": ["bing"]
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "webSearch": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "region": {
+            "type": "string"
+          },
+          "safeSearch": {
+            "type": "string",
+            "enum": ["strict", "moderate", "off"]
+          }
+        }
+      }
+    }
+  }
+}

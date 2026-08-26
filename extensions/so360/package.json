@@ -1,0 +1,12 @@
+{
+  "name": "@openclaw/so360-plugin",
+  "version": "2026.3.28",
+  "private": true,
+  "description": "OpenClaw 360 Search plugin",
+  "type": "module",
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}
